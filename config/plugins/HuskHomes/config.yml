@@ -1,0 +1,47 @@
+# HuskHomes — downloadable DonutSMP-style home GUI (no SpigotMC login)
+# Official docs: https://william278.net/docs/huskhomes
+
+language: en-gb
+check_for_updates: false
+
+general:
+  max_homes: 3
+  max_public_homes: 0
+  teleport_warmup_time: 5
+  teleport_warmup_display: ACTION_BAR
+  teleport_request_expiry_time: 60
+  teleport_cooldown_length: 5
+  strict_teleports: true
+  cross_server: false
+  global_respawning: false
+  allow_unicode_names: false
+  allow_unicode_descriptions: false
+  back_command_return_by_death: true
+  back_command_save_on_teleport: true
+  back_command_save_on_death: true
+
+# Survival-only home setting is enforced via LuckPerms worlds + this list
+disabled_worlds:
+  home_saving:
+    - lobby
+    - creative
+    - pvp
+    - world
+    - world_nether
+    - world_the_end
+
+economy:
+  enabled: false
+
+rtp:
+  enabled: false
+
+spawn_command:
+  enabled: true
+  teleport_warmup: false
+
+list_items:
+  use_items: true
+
+sound_effects:
+  enabled: true

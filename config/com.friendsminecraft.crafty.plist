@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.friendsminecraft.crafty</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>-lc</string>
+    <string>cd /var/opt/minecraft/crafty/crafty-4 &amp;&amp; source /var/opt/minecraft/crafty/.venv/bin/activate &amp;&amp; exec python3 main.py</string>
+  </array>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>/var/opt/minecraft/crafty/crafty.log</string>
+  <key>StandardErrorPath</key>
+  <string>/var/opt/minecraft/crafty/crafty.err</string>
+</dict>
+</plist>

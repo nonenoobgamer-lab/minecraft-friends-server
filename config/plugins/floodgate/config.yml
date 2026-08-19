@@ -1,0 +1,7 @@
+# Floodgate — Bedrock players join without Java accounts
+player-link:
+  enabled: true
+
+username-prefix: "*"
+
+# key.pem is auto-generated on first start — copy to Geyser-Spigot/

@@ -1,0 +1,4 @@
+# Plugin download notes
+# bootstrap.sh / download-plugins.sh pull latest Paper-compatible JARs from:
+#   GeyserMC download API, Hangar, Modrinth, GitHub Releases
+# Do not commit JAR files. Runtime lives in runtime/server/plugins/

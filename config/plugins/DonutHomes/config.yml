@@ -1,0 +1,22 @@
+# DonutSMP-style Home GUI — template config
+# Plugin: DonutSMP Home System + GUI (SpigotMC #126426)
+# Download manually from https://www.spigotmc.org/resources/donutsmp-home-system-gui.126426/
+
+max-homes: 3
+teleport-warmup-seconds: 5
+cancel-teleport-on-move: true
+allowed-set-worlds:
+  - survival
+gui-title: "&b&lYour Homes"
+empty-bed-name: "&7Empty Home Slot"
+empty-bed-lore:
+  - "&fClick to set home here"
+set-bed-name: "&9Home &f{slot}"
+set-bed-lore:
+  - "&fClick to teleport"
+  - "&cShift-click to delete"
+
+# Grant default players permission to use /home (check plugin docs for exact nodes):
+#   luckperms group default permission set donuthomes.home true
+#   luckperms group default permission set donuthomes.sethome true
+#   luckperms group default permission set donuthomes.multiple.3 true

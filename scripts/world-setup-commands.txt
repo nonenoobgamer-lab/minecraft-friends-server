@@ -1,0 +1,66 @@
+# Run these in the server console or in-game as OP after plugins load.
+# Server must be stopped for some file copies — see README.
+
+# --- Worlds ---
+/mv create lobby NORMAL
+/mv create creative NORMAL
+/mv create survival NORMAL
+/mv create pvp FLAT
+
+/mv modify set gamemode ADVENTURE lobby
+/mv modify set gamemode CREATIVE creative
+/mv modify set gamemode SURVIVAL survival
+/mv modify set gamemode SURVIVAL pvp
+/mv modify set difficulty PEACEFUL creative
+/mv modify set difficulty NORMAL survival
+
+/mv gamerule creative doMobSpawning false
+/mv gamerule pvp keepInventory true
+/mv gamerule lobby doDaylightCycle false
+/mv gamerule lobby doMobSpawning false
+
+/mv set spawn lobby
+/setspawn
+
+/mv weather lobby sun
+/mv weather lobby sun permanent
+
+# --- Multiverse-Inventories ---
+/mvinv enable
+/mv reload
+
+# --- Essentials aliases ---
+/setalias hub /spawn
+/setalias lobby /spawn
+
+# --- LuckPerms ---
+/lp group default permission set essentials.spawn true
+/lp group default permission set essentials.hub true
+/lp group default permission set deluxemenus.menu true
+/lp group default permission set betterrtp.use true
+/lp group default permission set multiverse.access.* true
+/lp group default permission set multiverse.teleport.self.* true
+/lp group default permission set huskhomes.command.home true
+/lp group default permission set huskhomes.command.sethome true
+/lp group default permission set huskhomes.command.delhome true
+/lp group default permission set huskhomes.max_homes.3 true
+
+# --- Whitelist ---
+/whitelist on
+/whitelist add YourJavaUsername
+
+# --- WorldGuard (after building — see regions-notes.txt) ---
+# /rg define dojo_floor
+# /rg define dojo_balconies
+# /rg flag dojo_floor pvp allow
+# /rg flag dojo_balconies pvp deny
+
+# --- Chunky pre-gen (survival) ---
+/mv tp survival
+/chunky world survival
+/chunky radius 2000
+/chunky start
+
+# --- Geyser key (after first start) ---
+# From server host shell:
+# cp plugins/floodgate/key.pem plugins/Geyser-Spigot/key.pem

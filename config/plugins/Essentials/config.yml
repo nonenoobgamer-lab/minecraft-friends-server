@@ -1,0 +1,49 @@
+# EssentialsX — economy disabled, homes disabled (DonutHomes handles /home)
+# Copy to plugins/Essentials/config.yml after first server start, or merge these keys.
+
+locale: en
+starting-balance: 0
+
+disabled-commands:
+  - pay
+  - bal
+  - balance
+  - sell
+  - worth
+  - sethome
+  - home
+  - homes
+  - delhome
+  - eco
+
+command-overrides:
+  - home
+  - sethome
+  - delhome
+  - homes
+
+spawn-on-join: false
+teleport-safety: true
+
+teleport-cooldown: 5
+teleport-delay: 5
+
+spawnpoint: lobby
+
+custom-teleports:
+  hub:
+    world: lobby
+    x: 0.5
+    y: 65.0
+    z: 0.5
+    yaw: 0.0
+    pitch: 0.0
+  lobby:
+    world: lobby
+    x: 0.5
+    y: 65.0
+    z: 0.5
+    yaw: 0.0
+    pitch: 0.0
+
+# Update spawn coordinates after building the hub

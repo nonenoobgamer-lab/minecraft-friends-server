@@ -1,0 +1,33 @@
+# BetterRTP — survival random teleport from hub RTP pad
+# Copy to plugins/BetterRTP/config.yml (merge key sections)
+
+Worlds:
+  - survival
+
+Default:
+  MaxRadius: 5000
+  MinRadius: 500
+  CenterX: 0
+  CenterZ: 0
+  UseWorldBorder: true
+  BiomesBlacklist:
+    - OCEAN
+    - DEEP_OCEAN
+    - DEEP_COLD_OCEAN
+    - DEEP_FROZEN_OCEAN
+    - DEEP_LUKEWARM_OCEAN
+    - DEEP_WARM_OCEAN
+
+DisabledWorlds:
+  - lobby
+  - creative
+  - pvp
+
+Delay:
+  Enabled: true
+  Time: 5
+
+CancelOnMove: true
+
+# Link hub stone lantern pad via Citizens NPC or pressure plate:
+#   rtp player %player_name%

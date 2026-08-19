@@ -1,0 +1,28 @@
+# LuckPerms default group permissions
+# Import: lp import luckperms-setup.json
+# Or run commands in docs/world-setup.md
+
+{
+  "metadata": {
+    "generatedBy": "minecraft-friends-server",
+    "type": "group",
+    "version": 1
+  },
+  "groups": {
+    "default": {
+      "nodes": [
+        { "key": "essentials.spawn", "value": true },
+        { "key": "essentials.hub", "value": true },
+        { "key": "essentials.lobby", "value": true },
+        { "key": "essentials.warp", "value": true },
+        { "key": "essentials.rtp", "value": true },
+        { "key": "deluxemenus.menu", "value": true },
+        { "key": "betterrtp.use", "value": true },
+        { "key": "multiverse.access.*", "value": true },
+        { "key": "multiverse.teleport.self.*", "value": true },
+        { "key": "worldguard.region.bypass.lobby", "value": false },
+        { "key": "worldguard.region.bypass.creative", "value": false }
+      ]
+    }
+  }
+}

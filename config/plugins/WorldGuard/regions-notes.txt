@@ -1,0 +1,36 @@
+# WorldGuard region flag reference for this server
+# Create regions in-game after building worlds (see docs)
+
+# LOBBY (entire world __global__ or lobby_spawn region):
+#   pvp: deny
+#   build: deny
+#   block-break: deny
+#   block-place: deny
+#   mob-spawning: deny
+#   fall-damage: deny
+#   invincible: allow
+
+# CREATIVE (entire world):
+#   pvp: deny
+#   mob-spawning: deny
+#   build: allow (for creative mode players - use bypass permission for admins)
+
+# PVP - dojo_floor:
+#   pvp: allow
+#   build: deny
+#   block-break: deny
+#   block-place: deny
+
+# PVP - dojo_balconies:
+#   pvp: deny
+#   build: deny
+
+# SURVIVAL - survival_spawn (small protected area only):
+#   build: deny
+#   pvp: deny
+
+# Example commands after selecting regions with WorldEdit:
+#   /rg define lobby_global
+#   /rg flag lobby_global pvp deny
+#   /rg flag lobby_global build deny
+#   /rg flag lobby_global mob-spawning deny

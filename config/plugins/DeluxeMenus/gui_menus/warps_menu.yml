@@ -1,0 +1,41 @@
+menu_title: '&6&lTemple Gates'
+open_command: menu
+size: 27
+items:
+  filler:
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+      - 0-26
+    display_name: ' '
+  survival:
+    material: OAK_SAPLING
+    slot: 11
+    display_name: '&a&lSurvival World'
+    lore:
+      - '&7Enter the wilderness'
+    click_commands:
+      - '[player] mv tp survival'
+  creative:
+    material: QUARTZ_BLOCK
+    slot: 13
+    display_name: '&f&lCreative Build'
+    lore:
+      - '&7Build without danger'
+    click_commands:
+      - '[player] mv tp creative'
+  pvp:
+    material: IRON_SWORD
+    slot: 15
+    display_name: '&c&lSamurai Dojo'
+    lore:
+      - '&7PvP with keep inventory'
+    click_commands:
+      - '[player] mv tp pvp'
+  hub:
+    material: CHERRY_SAPLING
+    slot: 22
+    display_name: '&d&lReturn to Temple'
+    lore:
+      - '&7Back to lobby spawn'
+    click_commands:
+      - '[player] hub'

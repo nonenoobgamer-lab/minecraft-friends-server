@@ -1,0 +1,19 @@
+# Geyser — Bedrock cross-play (apply after first plugin start)
+bedrock:
+  port: 19132
+  clone-remote-port: false
+  motd1: "Friends SMP"
+  motd2: "Java + Bedrock"
+
+remote:
+  address: auto
+  port: 25565
+  auth-type: floodgate
+
+floodgate-key-file: key.pem
+
+show-cooldown: title
+command-suggestions: false
+
+# After first start:
+#   cp plugins/floodgate/key.pem plugins/Geyser-Spigot/key.pem

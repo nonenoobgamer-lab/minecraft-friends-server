@@ -1,0 +1,39 @@
+# Live server / Crafty runtime (created by bootstrap on the Mac Mini)
+runtime/
+server/
+logs/
+crash-reports/
+world/
+world_nether/
+world_the_end/
+lobby/
+creative/
+survival/
+pvp/
+
+# Downloaded plugin JARs
+*.jar
+!config/**/*.jar
+
+# Generated secrets / keys
+plugins/floodgate/key.pem
+plugins/Geyser-Spigot/key.pem
+*.pem
+.env
+
+# Plugin runtime data
+plugins/LuckPerms/
+plugins/WorldGuard/worlds/
+plugins/Multiverse-Core/
+plugins/Essentials/userdata/
+plugins/Essentials/usermap.bin
+plugins/Essentials/uuids.bin
+plugins/HuskHomes/database/
+plugins/Citizens/saves.yml
+plugins/DecentHolograms/holograms/
+
+# OS / Python
+.DS_Store
+Thumbs.db
+.venv/
+__pycache__/

@@ -1,0 +1,13 @@
+# DeluxeMenus main config snippet — register /menu command
+# Merge into plugins/DeluxeMenus/config.yml after first start
+
+gui_menus:
+  warps_menu:
+    file: warps_menu.yml
+
+commands:
+  menu:
+    menu: warps_menu
+    register: true
+    permission: deluxemenus.menu
+    permission-message: "You don't have permission."
